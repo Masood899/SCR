@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI-Driven Chatbot</title>
   <link rel="stylesheet" href="hi.css">
+  <style>
+    .icon {
+        width: 50px;
+        height: 50px;
+        background-color: #3b4a6b; /* Dark blue background */
+        border-radius: 10px; /* Rounded corners */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .icon::before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 20px solid #f5e6d3; /* Light-colored arrow */
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -35,9 +53,8 @@
       </p>
       <div class="cta">
         <input type="email" placeholder="Enter your business email">
-        <button class="signup">Sign up free</button>
+        <div class="icon"></div>
       </div>
-      <p class="trial-info">✔ Free 14-day trial &nbsp;&nbsp; ✔ No credit card required</p>
     </section>
 
     <section class="support-bot">
